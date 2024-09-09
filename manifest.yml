@@ -1,0 +1,15 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: noderedfczfn20211115
+  buildpack: nodejs_buildpack
+  command: npm start
+  disk_quota: 1G
+  memory: 128MB
+  domain: mybluemix.net
+  host: node-red-iae2021
+  services:
+    - node-red-fczfn-2021--cloudant-1636992354408-17145
+  env:
+    OPTIMIZE_MEMORY: true
